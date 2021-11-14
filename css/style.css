@@ -112,6 +112,7 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 1rem 0;
 }
 
 .skill li {
@@ -122,6 +123,11 @@ header {
   padding: 0.5rem 1rem;
   margin: 0 1rem;
   box-shadow: 10px 10px 10px -5px rgba(25, 42, 70, 0.2);
+  transition: transform 0.4s;
+}
+
+.skill li:hover {
+  transform: translateY(-5px);
 }
 
 .skill-icon {
@@ -196,6 +202,13 @@ header {
   border-radius: 8px;
   margin: 0 10px;
   flex-shrink: 0;
+  transition: transform 0.4s;
+}
+
+.class-card:hover {
+  box-shadow: 10px 10px 10px 0px rgba(25, 42, 70, 0.2);
+  transform: translateY(-5px);
+  cursor: pointer;
 }
 
 .class-image {
@@ -244,7 +257,31 @@ header {
 
 .class-detail {
   font-size: 0.9rem;
-  color: ;
+  color: #545e6f;
+  line-height: 1.5rem;
+}
+
+footer {
+  border-top: 1px solid #e4e4e4;
+  background-color: #f8f9fa;
+  padding: 1rem 0;
+  margin: 1rem 0;
+}
+
+.footer-message {
+  font-weight: bold;
+  color: #545e6f;
+  margin: 0.3rem 0.5rem;
+}
+
+.footer-contact {
+  color: #545e6f;
+  margin: 0 0.5rem;
+}
+
+.footer-copyright {
+  color: #545e6f;
+  margin: 1rem 0.5rem;
 }
 
 @media screen and (min-width: 1200px) {
