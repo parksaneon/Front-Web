@@ -6,6 +6,19 @@ body {
   font-family: 'Spoqa Han Sans Neo', 'Sans-serif';
 }
 
+a {
+  all: unset;
+}
+
+a:link,
+a:visited,
+a:active,
+a:hover {
+  text-decoration: none;
+  color: #181818;
+  cursor: pointer;
+}
+
 .container {
   margin: 0 auto;
   color: #181818;
@@ -33,6 +46,17 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.head-container .head-brand,
+.head-container .head-blog {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.head-container .head-brand a:hover,
+.head-container .head-blog a:hover {
+  color: #2186c4;
 }
 
 @media screen and (min-width: 1200px) {
