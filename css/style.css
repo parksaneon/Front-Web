@@ -162,8 +162,36 @@ header {
   color: #2e7d32;
 }
 
+.roadmap-container {
+  margin-top: 2rem;
+}
+
+.roadamp-title-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.roadmap-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #545e6f;
+}
+
+.slide-prev,
+.slide-next {
+  font-size: 2rem;
+  cursor: pointer;
+  color: rgb(47, 48, 49);
+}
+
 @media screen and (min-width: 1200px) {
   .inner {
     max-width: 1200px;
   }
+}
+
+@media screen and (min-width: 980px) {
+  /* .skill {
+    display: none;
+  } */
 }
