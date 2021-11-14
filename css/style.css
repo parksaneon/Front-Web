@@ -1,9 +1,17 @@
+@import url(./nomalize.css);
+
 * {
   box-sizing: border-box;
 }
 
 body {
   font-family: 'Spoqa Han Sans Neo', 'Sans-serif';
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
 }
 
 a {
@@ -28,6 +36,7 @@ a:hover {
   width: 100%;
   height: 100%;
   margin: 0 auto;
+  padding: 0 2rem;
 }
 
 header {
@@ -57,6 +66,99 @@ header {
 .head-container .head-brand a:hover,
 .head-container .head-blog a:hover {
   color: #2186c4;
+}
+
+.visual {
+  position: relative;
+  margin-top: 60px;
+  height: 360px;
+  background-image: url('https://www.fun-coding.org/assets_lms/images/photodune-4161018-group-of-students-m.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 10%;
+}
+
+.visual::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(47, 48, 89, 0.6);
+}
+
+.title-container {
+  position: relative;
+  padding: 100px 0;
+  z-index: 1;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  padding-bottom: 0.8rem;
+}
+
+.message {
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+.skill {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.skill li {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  border-radius: 9px;
+  padding: 0.5rem 1rem;
+  margin: 0 1rem;
+  box-shadow: 10px 10px 10px -5px rgba(25, 42, 70, 0.2);
+}
+
+.skill-icon {
+  font-size: 2.5rem;
+}
+
+.skill-title {
+  margin: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill-name {
+  font-weight: 700;
+  color: #545e6f;
+  margin-bottom: 0.2rem;
+}
+
+.skill-usage {
+  font-size: 0.9rem;
+  color: #545e6f;
+}
+
+.python-style {
+  color: #2186c4;
+}
+
+.analysis-style {
+  color: #ff8066;
+}
+
+.ai-style {
+  color: #f7df1e;
+}
+
+.vue-style {
+  color: #2e7d32;
 }
 
 @media screen and (min-width: 1200px) {
