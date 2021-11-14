@@ -37,6 +37,7 @@ a:hover {
   height: 100%;
   margin: 0 auto;
   padding: 0 2rem;
+  overflow: hidden;
 }
 
 header {
@@ -186,6 +187,7 @@ header {
 
 .class-list {
   display: flex;
+  padding-bottom: 1rem;
 }
 
 .class-card {
@@ -193,6 +195,56 @@ header {
   box-shadow: 10px 10px 10px -5px rgba(25, 42, 70, 0.2);
   border-radius: 8px;
   margin: 0 10px;
+  flex-shrink: 0;
+}
+
+.class-image {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+  height: 150px;
+}
+
+.class-container {
+  padding: 0.5rem 1rem 1rem 1rem;
+}
+
+.class-skill {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.class-type,
+.class-format {
+  font-size: 0.9rem;
+}
+
+.class-type {
+  color: #949393;
+}
+
+.class-format {
+  color: #fff;
+  background-color: #0d47a1;
+  padding: 0.2rem;
+}
+
+.class-desc {
+  margin-top: 0.2rem;
+}
+
+.class-title {
+  font-weight: 700;
+  color: #545e6f;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-bottom: 0.5rem;
+}
+
+.class-detail {
+  font-size: 0.9rem;
+  color: ;
 }
 
 @media screen and (min-width: 1200px) {
